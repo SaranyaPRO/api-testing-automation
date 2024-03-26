@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="0.6309070587158203" tests='2' skipped='0'
+name="Gamifiapitesting" failures='1' errors='0'><testcase time="0.3984084129333496" name="Verify_A_Inputform_Api_Type_Of_Externalapi_--_@1.1_" status="passed"
+         classname="Verify_Form_Responses_Api_Endpoints_Note_It_Supports_Only_Get_And_Post"><system-out>
+            <![CDATA[
+            @scenario.begin
+                @gamificationapi
+                scenario: Verify a inputForm Api Type of ExternalApi -- @1.1 
+                given I have a base URL https://stage-gamificationapi.theproindia.com/ api ... Status.passed in 0.0s 
+                then I send a GET request to /v1/applications/projectId/62b404da22635c1c1fa248b7/1/10 with parameters with Test.json dataPath with user1 token ... Status.passed in 0.3972s 
+                then the response status code should be 200 code ... Status.passed in 0.001248s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="0.2324986457824707" name="Verify_A_Inputform_Api_Type_Of_Externalapi_--_@1.2_" status="failed"
+         classname="Verify_Form_Responses_Api_Endpoints_Note_It_Supports_Only_Get_And_Post"><failure type="Assertionerror" message=''>
+                        <![CDATA[ Failing step: then the response status code should be 200 code ... Status.failed in 0.0s  Location:Featuresgamifiapitesting.Feature
+                         File "C:\Users\SaranyaS\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+
+                  File "C:\Users\SaranyaS\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+
+                  File "features\steps\formResponseApi_step.py", line 114, in step_then
+    assert int(context.response.status_code) == int(status_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        ]]>
+                    </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @gamificationapi
+                scenario: Verify a inputForm Api Type of ExternalApi -- @1.2 
+                given I have a base URL https://stage-gamificationapi.theproindia.com/ api ... Status.passed in 0.0s 
+                then I send a GET request to /v1/gameAction/application/649a8e07c05ea8224df9f5e with parameters with Gamafi.json dataPath with user2 token ... Status.passed in 0.2325s 
+                then the response status code should be 200 code ... Status.failed in 0.0s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

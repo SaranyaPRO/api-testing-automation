@@ -1,0 +1,8 @@
+﻿18:18:34 - INFO - set logger successfully
+18:18:34 - INFO - base_url : https://stage-gamificationapi.theproindia.com/
+18:18:34 - INFO - json_payload_path : C:\Users\SaranyaS\OneDrive - theproindia.com\Documents\Automation\ApiTestingAutomation/features/utils/apiJsonData/Gamafi.json
+18:18:34 - INFO - Current EndPoint to Run : https://stage-gamificationapi.theproindia.com//v1/gameAction/application/649a8e07c05ea8224df9f5e
+18:18:34 - INFO - Status Code : 500
+18:18:34 - INFO - Response Status Code : 500
+18:18:34 - INFO - Compare current statusCode : 500 with expected statusCode : 200
+18:18:34 - ERROR - 

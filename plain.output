@@ -1,0 +1,22 @@
+Feature: Verify form Responses Api endpoints Note: it supports only GET and POST
+
+  Scenario Outline: Verify a inputForm Api Type of ExternalApi -- @1.1 
+    Given I have a base URL https://stage-gamificationapi.theproindia.com/ api ... passed in 0.000s
+    Then I send a GET request to /v1/applications/projectId/62b404da22635c1c1fa248b7/1/10 with parameters with Test.json dataPath with user1 token ... passed in 0.397s
+    Then the response status code should be 200 code ... passed in 0.001s
+
+  Scenario Outline: Verify a inputForm Api Type of ExternalApi -- @1.2 
+    Given I have a base URL https://stage-gamificationapi.theproindia.com/ api ... passed in 0.000s
+    Then I send a GET request to /v1/gameAction/application/649a8e07c05ea8224df9f5e with parameters with Gamafi.json dataPath with user2 token ... passed in 0.232s
+    Then the response status code should be 200 code ... failed in 0.000s
+Traceback (most recent call last):
+  File "C:\Users\SaranyaS\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "C:\Users\SaranyaS\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\formResponseApi_step.py", line 114, in step_then
+    assert int(context.response.status_code) == int(status_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
